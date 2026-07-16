@@ -1,4 +1,6 @@
 const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+console.log('BASE_URL cargada:', BASE_URL);
+console.log('VITE_API_URL en import.meta.env:', import.meta.env.VITE_API_URL);
 
 const getHeaders = () => {
   const token = localStorage.getItem('token');
